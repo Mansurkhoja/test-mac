@@ -1,0 +1,58 @@
+//Colors
+$white: #ffffff;
+$gray-0: #f2f5fa;
+$gray-1: #ededf0;
+$gray-2: #e1e3e5;
+$gray-3: #818386;
+$gray-4: #595f69;
+$gray-5: #333333;
+$blue: #37cfd1;
+$blue-1: #3a63de;
+$green: #44cb7f;
+$red: #fd726a;
+$yellow: #ffbb5d;
+$orange: #ff9054;
+$pink: #fdc8a6;
+$color-base: $gray-3;
+$color-border: $gray-2;
+$black: #000000;
+$white-icon: $white;
+
+//Elements colors
+//sidebar
+$sidebar-bg-color: $blue-1;
+$sidebar-text-color: rgba($white, 0.8);
+$sidebar-icon-color: rgba($white, 0.7);
+$sidebar-text-color-active: rgba($white, 1);
+// $sidebar-icon-color-active: rgba($white, 1);
+$sidebar-shadow-active: inset 0px -4px 8px rgba($black, 0.08), inset 0px 4px 8px rgba($black, 0.08);
+$sidebar-link-bg-active: rgba($black, 0.15);
+//chat
+$chat-list-bg: $white;
+$chat-inner-bg: $white;
+$chat-inner-own-text-bg:$gray-0;
+//chat avatar bg
+$avatar-bg-1: $green;
+$avatar-bg-2: $orange;
+$avatar-bg-3: $pink;
+$avatar-bg-4: $gray-1;
+$avatar-bg-5: $yellow;
+$avatar-bg-6: $blue;
+//border color
+$chat-border-color: $gray-2;
+//notify 
+$notify-badge-bg: $red;
+$notify-badge-color: $white;
+
+//Fonts
+$font-family-base: "Poppins", "Roboto", "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//font-size
+$fs-base: 15px;
+//font-weight
+$fw-base: 400;
+//Height
+$fullHeight: calc(var(--vh, 1vh) * 100);
+// $minHeight: 450px;
+$chat-header-height: 80px;
+$chat-footer-height: 76px;

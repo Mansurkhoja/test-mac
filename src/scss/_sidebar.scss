@@ -1,0 +1,105 @@
+.sidebar {
+    width: 150px;
+    flex: 0 0 150px;
+    background-color: $sidebar-bg-color;
+    // height: 100vh;
+    // height: $fullHeight;
+    // min-height: $minHeight;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.sidebar__inner {
+    position: relative;
+}
+.sidebar__list {
+    // display: flex;
+    // flex-direction: column;
+}
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    // color: $sidebar-text-color;
+    padding: 4px;
+    word-break: break-word;
+    &--active {
+        background-color: $sidebar-link-bg-active;
+        box-shadow: $sidebar-shadow-active;
+        // color: $color-base;
+        .sidebar__link-icon,
+        .sidebar__link-name {
+            color: $sidebar-text-color-active;
+        }
+    }
+    &:hover {
+        .sidebar__link-icon,
+        .sidebar__link-name {
+            color: $sidebar-text-color-active;
+        }
+    }
+    &.logo {
+        height: 112px;
+    }
+}
+.sidebar__link-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 16px;
+    font-size: 38.4px;
+    color: $sidebar-icon-color;
+    transition: color 0.19s ease-in;
+    position: relative;
+    .notify-badge {
+        position: absolute;
+        top: 0;
+        right: 7px;
+        transform: translate(100%, calc(-70% + 6px));
+        border: 4px solid $sidebar-bg-color;
+    }
+}
+.sidebar__link-name {
+    font-size: 13px;
+    color: $sidebar-text-color;
+    transition: color 0.19s ease-in;
+}
+.sidebar__list-scroller {
+    background-color: $sidebar-bg-color;
+    color: $white-icon;
+    width: 100%;
+    height: 106px;
+    position: absolute;
+    top: 100vh;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23.5px;
+    transform: translateY(-100%);
+    cursor: pointer;
+    .icon {
+        transition: opacity 0.19s ease-in;
+        &:nth-child(1) {
+            opacity: 0.2;
+        }
+        &:nth-child(2) {
+            opacity: 0.5;
+        }
+    }
+    &:hover {
+        .icon {
+            &:nth-child(1),
+            &:nth-child(2) {
+                opacity: 1;
+            }
+        }
+    }
+    &.hide {
+        display: none;
+    }
+}

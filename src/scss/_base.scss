@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    font-family: $font-family-base;
+    font-weight: $fw-base;
+    font-size: $fs-base;
+    color: $color-base;
+    backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //background: rgba($blue-1, .4);
+}
+::-webkit-scrollbar {
+    display: block;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img,
+svg {
+    vertical-align: middle;
+    border: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    overflow: visible;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px #ffffff inset;
+}
+a {
+    text-decoration: none;
+}
+
+button,
+select {
+    text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+p {
+    margin: 0;
+}
+// base class
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    font-size: inherit;
+}
+.wrapper {
+    overflow: hidden;
+    background: rgba($blue-1, .4);
+}
+.wrapper__inner {
+    display: flex;
+    height: 100vh;
+    height: $fullHeight;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    font-size: 16px;
+    min-width: 22px;
+    min-height: 22px;
+    cursor: pointer;
+    color: $color-base;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    outline: none;
+    transition: color 0.19s linear;
+    &:hover {
+        color: rgba($color: $color-base, $alpha: 0.8);
+    }
+    &-submit{
+        font-size: 20.8px;
+        color: $white;
+        padding: 17.6px;
+        background-color: $blue-1;
+        &:hover {
+            color: rgba($color: $white, $alpha: 0.9);
+        }
+    }
+}
+
+.logo {
+    img {
+        max-width: 46px;
+        width: 100%;
+        height: auto;
+    }
+}
+.notify-badge{
+    display: inline-block;
+    padding: 0 6px;
+    white-space: nowrap;
+    background-color: $notify-badge-bg;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: $notify-badge-color;
+}
+.avatar-bg-1 {
+    background-color: rgba($avatar-bg-1, 1);
+    &.no-photo {
+        color: $avatar-bg-1;
+        background-color: rgba($avatar-bg-1, 0.2);
+    }
+}
+.avatar-bg-2 {
+    background-color: rgba($avatar-bg-2, 1);
+    &.no-photo {
+        color: $avatar-bg-2;
+        background-color: rgba($avatar-bg-2, 0.2);
+    }
+}
+.avatar-bg-3 {
+    background-color: rgba($avatar-bg-3, 1);
+    &.no-photo {
+        color: $avatar-bg-3;
+        background-color: rgba($avatar-bg-3, 0.2);
+    }
+}
+.avatar-bg-4 {
+    background-color: rgba($avatar-bg-4, 1);
+    &.no-photo {
+        color: $avatar-bg-4;
+        background-color: rgba($avatar-bg-4, 0.2);
+    }
+}
+.avatar-bg-5 {
+    background-color: rgba($avatar-bg-5, 1);
+    &.no-photo {
+        color: $avatar-bg-5;
+        background-color: rgba($avatar-bg-5, 0.2);
+    }
+}
+.avatar-bg-6 {
+    background-color: rgba($avatar-bg-6, 1);
+    &.no-photo {
+        color: $avatar-bg-6;
+        background-color: rgba($avatar-bg-6, 0.2);
+    }
+}
+.emoji{
+    width: 100%;
+    height: auto;
+    max-width: 20px;
+    margin: 1px;
+}
+.burger{
+    display: none;
+}

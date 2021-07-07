@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Chat Private</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link logo">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#dashboard-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#commerce-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    E-Commerce
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#calendar-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Calendar
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail-icon" />
+                                    </svg>
+                                    <span class="notify-badge">
+                                        4
+                                    </span>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Mail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link sidebar__link--active">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#chat-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Chat
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#tasks-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Tasks
+                                </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__link-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#projects-icon" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar__link-name">
+                                    Projects
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar__list-scroller">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <use xlink:href="img/icons/sprite.svg#burger" />
+                    </svg>
+                </div>
+                <div class="chat__list">
+                    <div class="chat__list-header">
+                        <input class="chat__search" type="search" name="serach-chat" id="serach-chat"
+                            placeholder="Search...">
+                        <span class="chat__search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#search-icon" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="chat__list-inner">
+                        <div class="chat__list-items">
+                            <div class="chat__list-items-header">
+                                <div class="chat__list-name">
+                                    TEAMS
+                                </div>
+                                <button type="button" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#plus-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="chat__list-items-inner">
+                                <div class="chat__list-item" data-toggle="list-item" data-target="2">
+                                    <div class="chat__avatar avatar-bg-6 no-photo">
+                                        <div class="chat__avatar-inner">
+                                            M
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            #Managers
+                                        </div>
+                                        <p class="chat__info-text">
+                                            Hello, Mark! I am writing to in Hello. Can you drop the phot
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item" data-toggle="list-item" data-target="3">
+                                    <div class="chat__avatar chat__avatar--online avatar-bg-2 no-photo">
+                                        <div class="chat__avatar-inner">
+                                            d
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            #Designers
+                                        </div>
+                                        <p class="chat__info-text">
+                                            Hello. Can you drop the phot Hello. Can you drop the phot
+                                        </p>
+                                        <div class="chat__unread notify-badge">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat__list-items">
+                            <div class="chat__list-items-header">
+                                <div class="chat__list-name">
+                                    PEOPLE
+                                </div>
+                                <button type="button" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#plus-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="chat__list-items-inner">
+                                <div class="chat__list-item" data-toggle="list-item" data-target="4">
+                                    <div class="chat__avatar chat__avatar--online avatar-bg-1">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-1.png" alt="Dustin Williamson">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Dustin Williamson
+                                        </div>
+                                        <p class="chat__info-text">
+                                            Hello, Mark! I am writing to insrsaw
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item" data-toggle="list-item" data-target="1">
+                                    <div class="chat__avatar avatar-bg-2">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-2.png" alt="Jane Wilson">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Jane Wilson
+                                        </div>
+                                        <p class="chat__info-text">
+                                            We use the Arts as a means means
+                                        </p>
+                                        <div class="chat__unread notify-badge">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item" data-toggle="list-item" data-target="5">
+                                    <div class="chat__avatar  chat__avatar--online avatar-bg-3">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-3.png" alt="Regina Cooper">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Regina Cooper
+                                        </div>
+                                        <p class="chat__info-text">
+                                            The Arts play a large role inaaaa
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item" data-toggle="list-item" data-target="6">
+                                    <div class="chat__avatar  chat__avatar--online avatar-bg-4">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-4.png" alt="Brandon Pena">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Brandon Pena
+                                        </div>
+                                        <p class="chat__info-text">
+                                            The arts allow us to be as sp...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item" data-toggle="list-item" data-target="7">
+                                    <div class="chat__avatar avatar-bg-5">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-5.png" alt="Jacob Hawkins">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Jacob Hawkins
+                                        </div>
+                                        <p class="chat__info-text">
+                                            From dance and music to a...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item">
+                                    <div class="chat__avatar  chat__avatar--online avatar-bg-6">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-6.png" alt="Shane Black">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Shane Black
+                                        </div>
+                                        <p class="chat__info-text">
+                                            The arts teach us how to co...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item">
+                                    <div class="chat__avatar  chat__avatar--online avatar-bg-3">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-3.png" alt="Regina Cooper">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Regina Cooper
+                                        </div>
+                                        <p class="chat__info-text">
+                                            The Arts play a large role inaaaa
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat__list-item">
+                                    <div class="chat__avatar  chat__avatar--online avatar-bg-3">
+                                        <div class="chat__avatar-inner">
+                                            <img src="img/avatar-3.png" alt="Regina Cooper">
+                                        </div>
+                                    </div>
+                                    <div class="chat__info">
+                                        <div class="chat__name">
+                                            Regina Cooper
+                                        </div>
+                                        <p class="chat__info-text">
+                                            The Arts play a large role inaaaa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__inner active" id="1">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-2">
+                                <div class="chat__avatar-inner">
+                                    <img src="img/avatar-2.png" alt="Jane Wilson">
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                Jane Wilson
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>Yesterday</span>
+                            </div>
+                            <div class="chat__message">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-2">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-2.png" alt="Jane Wilson">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container">
+                                            <p class="chat__text">
+                                                Hi Cody, any progress on the project?<img class="emoji"
+                                                    src="img/emoji-happy.png" alt="😃">
+                                            </p>
+                                            <span class="chat__message-time">1 day ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__message chat__message--own">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-6">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-6.png" alt="Shane Black">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container">
+                                            <p class="chat__text">
+                                                Hi Jane! <br>
+                                                Yes. I just finished developing the "Chat" template.
+                                            </p>
+                                            <span class="chat__message-time">1 day ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="chat__images-container">
+                                        <div class="chat__image">
+                                            <img src="img/sm-1.jpg" alt="sm-1">
+                                        </div>
+                                        <div class="chat__image">
+                                            <img src="img/sm-2.jpg" alt="sm-2">
+                                        </div>
+                                        <div class="chat__image">
+                                            <img src="img/sm-3.jpg" alt="sm-3">
+                                        </div>
+                                        <div class="chat__image-more">
+                                            <span>+3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__message">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-2">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-2.png" alt="Jane Wilson">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container">
+                                            <p class="chat__text">
+                                                It looks amazing. <img class="emoji" src="img/emoji-nerd.png" alt="😃">
+                                                <br>
+                                                The customer will be very satisfied.
+                                            </p>
+                                            <span class="chat__message-time">1 day ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="chat__message chat__message--own">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-6">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-6.png" alt="Shane Black">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container">
+                                            <p class="chat__text">
+                                                Thank you, glad you liked it. <br>
+                                                Send me Styles Guide.
+                                            </p>
+                                            <span class="chat__message-time">1 day ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>Today</span>
+                            </div>
+                            <div class="chat__message">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-2">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-2.png" alt="Jane Wilson">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container chat__container--download">
+                                            <div class="chat__download-info">
+                                                <span class="chat__download-name">Brand Styles Guide.pdf</span>
+                                                <span class="chat__download-size">487 KB</span>
+                                            </div>
+                                            <div class="chat__download">
+                                                <span>Download</span>
+                                                <span class="chat__download-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                        <use xlink:href="img/icons/sprite.svg#download-icon" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="chat__message-time">2 min ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__message chat__message--own">
+                                <div class="chat__message-inner">
+                                    <div class="chat__message-wrapper">
+                                        <div class="chat__avatar avatar-bg-6">
+                                            <div class="chat__avatar-inner">
+                                                <img src="img/avatar-6.png" alt="Shane Black">
+                                            </div>
+                                        </div>
+                                        <div class="chat__container">
+                                            <p class="chat__text">
+                                                I'll see later
+                                            </p>
+                                            <span class="chat__message-time">1 min ago</span>
+                                        </div>
+                                        <div class="chat__message-more">
+                                            <button type="button" class="btn" data-toggle="btn-toggle"
+                                                data-target="chat__message-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#edit-icon" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn chat__message-more-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#delete-icon" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                            <!-- <div class="chat__input-placeholder">
+                                    Type a message here...
+                                </div> -->
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="2">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-6 no-photo">
+                                <div class="chat__avatar-inner">
+                                    M
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                #Managers
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="3">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-2 no-photo">
+                                <div class="chat__avatar-inner">
+                                    d
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                #Designers
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="4">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-1">
+                                <div class="chat__avatar-inner">
+                                    <img src="img/avatar-1.png" alt="Dustin Williamson">
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                Dustin Williamson
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="5">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-3">
+                                <div class="chat__avatar-inner">
+                                    <img src="img/avatar-3.png" alt="Regina Cooper">
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                Regina Cooper
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="6">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-4">
+                                <div class="chat__avatar-inner">
+                                    <img src="img/avatar-4.png" alt="Brandon Pena">
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                Brandon Pena
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__inner" id="7">
+                    <div class="chat__header">
+                        <div class="chat__header-info">
+                            <div class="chat__avatar chat__avatar--online avatar-bg-5">
+                                <div class="chat__avatar-inner">
+                                    <img src="img/avatar-5.png" alt="Jacob Hawkins">
+                                </div>
+                            </div>
+                            <div class="chat__name">
+                                Jacob Hawkins
+                            </div>
+                        </div>
+                        <div class="chat__header-actions">
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#plus-icon" />
+                                </svg>
+                            </button>
+                            <button type="button" class="btn chat__header-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#more-icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat__body">
+                        <div class="chat__date-group">
+                            <div class="chat__date">
+                                <span>No messages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__footer">
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#attachment-icon" />
+                            </svg>
+                        </button>
+                        <button class="btn chat__footer-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#emoji-icon" />
+                            </svg>
+                        </button>
+                        <div class="chat__input-area">
+                            <textarea tabindex="-1" class="chat__textarea" name="chat-textarea" id="chat-textarea"
+                                maxlength="9999" placeholder="Type a message here..."></textarea>
+                        </div>
+                        <button class="btn btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#send-icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
